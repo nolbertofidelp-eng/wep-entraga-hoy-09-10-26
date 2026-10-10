@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #faf8f5;
+  color: #2d2d2d;
+}
+
+/* Header / Hero con tonos gastronómicos warm */
+.hero {
+  background: linear-gradient(135deg, #781c1c, #4a0d0d);
+  color: #ffffff;
+  text-align: center;
+  padding: 3.5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #f1c40f;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Tarjetas */
+.card {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  color: #781c1c;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f3e5d8;
+  padding-bottom: 0.4rem;
+}
+
+/* Biografía / Historia */
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .bio-content {
+    flex-direction: row;
+  }
+  .profile-img {
+    width: 220px;
+  }
+}
+
+/* Especialidades */
+.hobbies-list {
+  list-style: none;
+}
+
+.hobbies-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed #e2d8ce;
+}
+
+.hobbies-list li:last-child {
+  border-bottom: none;
+}
+
+/* Contacto */
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #c0392b;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #a93226;
+}
+
+.btn-alt {
+  background-color: #2c3e50;
+}
+
+.btn-alt:hover {
+  background-color: #1a252f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #2c1810;
+  color: #a89f91;
+  font-size: 0.9rem;
+}
